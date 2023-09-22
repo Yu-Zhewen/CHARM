@@ -21,8 +21,8 @@ automm=charm(prj_dir)
 Versal_config=automm.cdse(A,B)
 
 #Launch charm automatic code generator to emit the code for AIE, PL and Host CPU
-device='vck190' # Supported devices are vck190 and vck5000
+device='vck5000' # Supported devices are vck190 and vck5000
 automm.cacg(Versal_config,device)
 
 # #Run Vitis Compilation Flow
-# automm.build()
+automm.build()
